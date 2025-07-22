@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import { assets, blog_data, comments_data } from "../assets/assets"
 import Navbar from "../components/Navbar"
 import Moment from "moment"
+import Footer from "../components/Footer"
 
 const Blog = () => {
   const {id} = useParams()
@@ -75,7 +76,18 @@ const Blog = () => {
             <button type="submit" className="bg-primary text-white rounded p-2 px-8 hover:scale-102 transition-all cursor-pointer">Submit</button>
           </form>
         </div>
+        
+        {/* Share button  */}
+        <div className="my-24 max-w-3xl mx-auto">
+          <p className="font-semibold my-4">Share this article on social media</p>
+          <div className="flex">
+            <img src={assets.facebook_icon} alt="" />
+            <img src={assets.twitter_icon} alt="" />
+            <img src={assets.googleplus_icon} alt="" />
+          </div>
+        </div>
       </div>
+      <Footer/>
     </div>
   ) : (
     <div>Loading...</div>
