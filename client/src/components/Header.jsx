@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+
 import { useRef } from "react"
 import { assets } from "../assets/assets"
 import { useAppContext } from "../context/AppContext"
@@ -28,7 +28,7 @@ const Header = () => {
                 <img src={assets.star_icon} className="w-2.5" alt="" />
             </div>
 
-            <h1 className="text-3xl sm:text-6xl font-semibold sm:leading-16 text-gray-700">Your own <span className="text-primary">blogging</span> <br /> platform.</h1>
+            <h1 className="text-3xl sm:text-6xl font-semibold sm:leading-16 text-gray-700">Explore Ancient <span className="text-primary">Forts</span> <br /> in the Sahyadri.</h1>
             <p className="my-6 sm:my-8 max-w-2xl m-auto max-sm:text-xs">This is your space to think out loud, to share what matters, and to write filters. Whether it's one word or thousand, youe story starts right here.
             </p>
 

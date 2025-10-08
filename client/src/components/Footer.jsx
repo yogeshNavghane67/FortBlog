@@ -7,9 +7,8 @@ const Footer = () => {
            
            <div>
             <img src={assets.logo} alt="logo" className="w-32 sm:w-44"/>
-            <p className="max-w-[410px] mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo harum labore inventore neque ipsa quam, 
-                id temporibus, at corrupti consequatur ipsum molestias? Possimus
-                 similique quidem consectetur veritatis commodi nihil consequuntur.</p>
+            <p className="max-w-[410px] mt-6">Explore the majestic Sahyadri Forts—a journey through the rich history, architecture, and legends of Maharashtra’s
+                 mountain fortresses. Discover stories of valor, Maratha glory, and hidden trails that echo the legacy of Chhatrapati Shivaji Maharaj.</p>
            </div>
 
            <div className="flex flex-wrap justify-between w-full md:w-[45%] gap-5">
