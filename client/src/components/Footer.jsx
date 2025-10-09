@@ -1,6 +1,8 @@
 import { assets, footer_data } from "../assets/assets"
+import { useAppContext } from "../context/AppContext";
 
 const Footer = () => {
+      const {navigate, token} = useAppContext();
   return (
     <div className="px-6 md:px-16 lg:px-24 xl:px-32 bg-primary/3">
         <div className="flex md:flow-row items-start justify-between gap-10 py-10 border-b border-gray-500/30 text-gray-500">
@@ -22,10 +24,15 @@ const Footer = () => {
                             </li>
                         ))}
                     </ul>
+                     
                 </div>
+                
             ))}
            </div>
-
+<button onClick={()=>navigate('/admin')} className="flex items-center gap-1 rounded-full text-sm cursor-pointer bg-primary text-white px-5 py-2.5">
+            {token ? 'Dashboard' : 'Login'}
+            <img src={assets.arrow} className="w-3" alt="arrow" />
+        </button>
         </div>
         <p className="py-4 text-center text-sm md:text-base text-gray-500/80">Copyright 2025 @ FortBlog YN Edits - All Right Reserved.</p>
     </div>

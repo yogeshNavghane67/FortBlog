@@ -10,7 +10,9 @@
 }
 
 @theme {
-    --color-primary:  #5044E5;
+    --color-primary:  #008fb3;
+    --color-second: #eb7d00;
+    --color-third: #01b725;
 }
 
 
