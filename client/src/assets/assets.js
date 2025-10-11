@@ -58,7 +58,7 @@ export const assets = {
     dashboard_icon_3,
     dashboard_icon_4,
 }
-export const blogCategories = ['All', 'Hill Forts', 'Forest Fort', 'Sea Fort', 'Land Fort']
+export const blogCategories = ['All', 'Hill Fort', 'Forest Fort', 'Sea Fort', 'Land Fort']
 
 export const blog_data = [
     {
