@@ -15,7 +15,7 @@ const AddBlog = () => {
   const [image,setImage] = useState(false);
   const [title,setTitle] = useState('');
   const [subTitle,setSubTitle] = useState('');
-  const [category,setCategory] = useState('Startup');
+  const [category,setCategory] = useState('Hill Fort');
   const [isPublished,setIsPublished] = useState(false);
 
   const generateContent = async () => {
@@ -42,7 +42,7 @@ const AddBlog = () => {
       setImage(false)
       setTitle('')
       quillRef.current.root.innerHTML = ''
-      setCategory('Startup')
+      setCategory('Hill Fort')
     } else {
       toast.error(data.message)
     }
